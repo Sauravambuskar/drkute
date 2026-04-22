@@ -1,0 +1,474 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║          KUTE HOSPITAL & LAPAROSCOPY CENTRE — 5-PAGE WEBSITE MEGA PROMPT           ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+ROLE:
+You are an expert full-stack web developer and UI/UX designer. Generate a complete,
+production-ready, 5-page hospital website for Kute Hospital & Laparoscopy Centre.
+All code must be clean, modern, fully responsive (mobile/tablet/desktop), and ready
+to paste directly into Elementor Custom HTML widgets. Do NOT truncate any file.
+Output all 5 complete files one after another.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — BRAND IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hospital Name     : Kute Hospital & Laparoscopy Centre
+Tagline           : "Caring for You, Always"
+Sub-tagline       : "A Trusted Name in Healthcare"
+Location          : Sangamner, Ahmednagar, Maharashtra, India
+Website           : kutehospital.com
+Accreditation     : NABH Accredited
+Enquiry           : +91 88888 82225
+Medical Helpline  : +91 88887 32225
+Ambulance (24/7)  : +91 88883 72225
+YouTube Video     : https://www.youtube.com/watch?v=sP9eHwJOQIA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — COLOUR PALETTE (CSS Variables)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+--red    : #FF3F25   → Primary CTA, brand marks, accents
+--navy   : #0B1F3A   → Headers, navigation, dark sections
+--teal   : #00B5A4   → Sub-accents, success states, icons
+--cream  : #FFF8F6   → Page backgrounds
+--sand   : #F5EDE8   → Card backgrounds, dividers
+--grey   : #5A5A5A   → Body text, descriptions
+--charcoal: #1C1C1C  → Headings, high-contrast text
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — TYPOGRAPHY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Primary Font  : Rethink Sans (Google Fonts) — weights 400, 600, 700, 800
+Serif Accent  : DM Serif Display Italic (Google Fonts)
+H1            : clamp(38px, 5.5vw, 68px) — weight 800 — tracking -2.5px
+H2            : clamp(28px, 4vw, 46px)   — weight 800 — tracking -1.5px
+Body          : 15-16px — weight 400 — line-height 1.85
+Labels/Eyebrow: 11px — weight 700 — ALL CAPS — letter-spacing 3px — color: #FF3F25
+Icons         : Font Awesome 6.5.0 CDN
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — REAL HOSPITAL IMAGE URLs (use across all pages)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hospital Front Building   : https://www.kutehospital.com/wp-content/uploads/2026/02/kutedr1.png
+Dr. Pradeep Kute (Main)   : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-347.png
+Second Doctor             : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-348.png
+Doctor Checking Patient   : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-359.png
+ICU Image                 : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-349-1.png
+Pathology Lab             : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-351-1.png
+Staff Image 1             : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-352.png
+Staff Image 2             : https://www.kutehospital.com/wp-content/uploads/2026/02/IMG_9901-768x512-1.jpg
+Hospital Area             : https://www.kutehospital.com/wp-content/uploads/2026/02/IMG_9717-768x512-1.jpg
+OT / Operation Theater    : https://www.kutehospital.com/wp-content/uploads/2026/02/IMG_9643-1024x683-1.jpg
+Hospital Floor            : https://www.kutehospital.com/wp-content/uploads/2026/02/IMG_9680-1024x683-1.jpg
+Cancer Surgery            : https://www.kutehospital.com/wp-content/uploads/2026/02/cancer-surgery-1024x681-1.jpg
+Hero Optional Image       : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-353-1.png
+Hospital Image A          : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-354.png
+Hospital Image B          : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-355.png
+Hospital Image C          : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-358.png
+Hospital Image D          : https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-359-1.png
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — INSURANCE & TPA PARTNERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TPA Partners:
+CIGNA TTK, DHS, E-MEDITEK, FHPL, HEALTH INDIA, IFFCO TOKIO, LIBERTY GEN INS,
+MD INDIA, MEDI ASIST, PARAMOUNT, VIDAL HEALTH, VIPUL MEDCORP, RAKSHA, TATA AIG,
+MEDI CARE, ERICSON TPA, ROTHSHIELD TPA
+
+Private Insurance Companies:
+ADITYA BIRLA HEALTH INSURANCE, APOLLO MUNICH HEALTH INSURANCE,
+RELIANCE GENERAL INSURANCE, BAJAJ ALLIANZ, CHOLMANDALAM, FUTURE GENERAL,
+HDFC ERGO, ICICI LOMBARD, RELIGARE, STAR HEALTH, UNIVERSAL SOMPO,
+MAX BUPA, UNITED HEALTHCARE PAREKH
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6 — PATIENT TESTIMONIALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Rakesh Shinde — "Kute Hospital, the premier emergency facility in Sangamner City
+   and Taluka, welcomes all patients with top-notch services available 24/7."
+2. Somnath — "Dr. Pradeep Kute was fantastic. Knowledgeable, caring, and informative.
+   Felt at ease and confident in receiving expert medical care. Highly recommended."
+3. Aniket Jagatap — "Kute Hospital: Where compassionate care and skilled professionals
+   come together to ensure your well-being every step of the way."
+All reviews: 5 stars | Verified Patients
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7 — 5 PAGES TO GENERATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PAGE 1: HOME — index.html                                                      │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+Build these sections IN ORDER:
+
+[1] FIXED NAVBAR
+    - Logo: red icon box (hospital icon) + "KUTE HOSPITAL" bold + "& Laparoscopy Centre" teal sub
+    - Nav links: About | Services | Doctors | Insurance | Reviews | Contact
+    - Right side: phone number display + "Book Appointment" red CTA button
+    - Mobile: hamburger menu with smooth slide-down dropdown
+    - Teal underline animation on hover for nav links
+    - Active link highlighted on scroll
+
+[2] HERO SECTION (full-screen, min-height: 100vh)
+    - Background: kutedr1.png (hospital front) with dark navy overlay (opacity 0.85)
+    - Left side content:
+        * NABH pill badge (red border, red text)
+        * H1: "Expert Care When It Matters Most." — "Most." in red (#FF3F25)
+        * DM Serif italic: "Caring for You, Always."
+        * Description paragraph about Kute Hospital Sangamner
+        * 2 CTA buttons: [Book Appointment] (red filled) + [Our Services] (ghost outline)
+        * 4 animated stat counters (trigger on page load): 4800+ Patients/Month,
+          20+ Specialities, 150+ Expert Doctors, 14+ Years Experience
+    - Right side (desktop only, hide on mobile):
+        * Main card: Screenshot-347.png (Dr. Pradeep Kute) with rounded corners,
+          box shadow, "✓ NABH Accredited" teal badge top-right
+        * 3 mini cards below in a row:
+          ICU (Screenshot-349-1.png) | Doctor+Patient (Screenshot-359.png) | Lab (Screenshot-351-1.png)
+
+[3] EMERGENCY STRIP (full-width red bar)
+    - 4 items side by side: Enquiry +91 88888 82225 | Helpline +91 88887 32225
+      | Ambulance +91 88883 72225 | 24/7 Emergency Care
+    - All phone numbers as clickable tel: links
+    - Stacks vertically on mobile
+
+[4] YOUTUBE VIDEO SECTION (navy dark background)
+    - Eyebrow label: "WATCH & LEARN"
+    - H2: "See Kute Hospital in Action"
+    - Video embed: https://www.youtube.com/embed/sP9eHwJOQIA
+    - IMPORTANT: Show Screenshot-347.png (Dr. Kute) as custom thumbnail initially
+    - On thumbnail click: hide thumbnail div, load iframe with autoplay=1
+    - Large play button overlay on thumbnail (red circle, white arrow)
+
+[5] ABOUT SECTION (white bg)
+    - Left: OT image (IMG_9643) rounded card with "14+ Years of Excellence"
+      dark navy badge overlay bottom-right
+    - Right: eyebrow "ABOUT US", H2 "Committed to Excellence in Care",
+      DM Serif italic sub-heading, 2 body paragraphs,
+      4 feature chips 2x2 grid (Laparoscopic Surgery / 24-7 ICU & Emergency /
+      Cashless Mediclaim / Advanced Diagnostics), red "Book Appointment" button
+
+[6] SERVICES GRID (cream bg)
+    - Eyebrow + H2 + description centered header
+    - 3-column grid (1 column mobile, 2 tablet, 3 desktop)
+    - 9 service cards, each with: real image (180px height) + icon + title + description
+      - Emergency & ICU           → Screenshot-349-1.png
+      - Laparoscopic Surgery      → IMG_9643-1024x683-1.jpg
+      - Cancer Surgery (Oncology) → cancer-surgery-1024x681-1.jpg
+      - Diagnostics & Pathology   → Screenshot-351-1.png
+      - Cardiology                → Screenshot-358.png
+      - Orthopaedics & Trauma     → IMG_9680-1024x683-1.jpg
+      - Gastroenterology          → Screenshot-359-1.png
+      - Urology & Nephrology      → Screenshot-354.png
+      - Plastic Surgery           → Screenshot-355.png
+    - Hover: top red bar animation + lift shadow + image zoom
+
+[7] DOCTOR SECTION (white bg)
+    - Centered header: eyebrow "MEET OUR EXPERT", H2 "Dr. Pradeep Kute"
+    - 2-column grid:
+        Left: Screenshot-347.png image (tall, object-position: top)
+              with "14+ Yrs Experience" red badge top-left
+        Right: "Chief Surgeon & Hospital Director" red uppercase label,
+               H2 heading, 2 body paragraphs with full bio,
+               tags row: Laparoscopic Surgery | General Surgery | Oncology |
+               Trauma Surgery | 14+ Years | NABH Certified
+               Red "Call for Appointment" button (tel: +91 88888 82225)
+    - Staff row below (2 cards): Screenshot-348.png + IMG_9901-768x512-1.jpg
+      each with dark overlay label ("Expert Medical Team" / "Dedicated Staff")
+
+[8] STATS COUNTER SECTION (navy bg)
+    - 4 boxes in a row with borders between them
+    - Each: teal icon (large), animated number, label
+    - 4800+ Patients/Month | 20+ Specialities | 150+ Expert Doctors | 14+ Years Excellence
+    - Use IntersectionObserver to start counting only when section scrolls into view
+    - Count from 0 to target over ~1.8 seconds
+
+[9] WHY CHOOSE US (sand bg)
+    - Centered header: eyebrow "WHY CHOOSE US", H2 "Best Hospital in the Region"
+    - 2-column grid:
+        Left: image collage (Screenshot-353-1 top full, bottom 2 side by side:
+              Screenshot-352 + IMG_9717)
+        Right: 5 feature points each with white icon card + title + text:
+          · Advanced Technology — state-of-the-art surgical & diagnostic tools
+          · Patient-Centered Care — personalized, evidence-based treatment
+          · NABH Accredited — highest standards of safety & quality
+          · Best & Affordable Treatment — cashless mediclaim for 30+ insurers
+          · 24/7 Emergency Ready — ambulance, ICU, trauma care always available
+
+[10] HOSPITAL GALLERY (sand/cream bg)
+    - Eyebrow "OUR FACILITY", H2 "Inside Kute Hospital"
+    - 4-column masonry-style grid
+    - 7 images: kutedr1.png (tall spanning 2 rows) + Screenshot-349-1 + Screenshot-351-1
+      + IMG_9643 + IMG_9680 + cancer-surgery + IMG_9717
+    - CSS hover: scale(1.06) zoom with overflow:hidden
+
+[11] INSURANCE & TPA SECTION (white bg)
+    - Centered header: eyebrow "CASHLESS MEDICLAIM", H2 "Insurance & TPA Partners"
+    - 2 columns (sand bg cards with rounded corners):
+        Column 1: TPA Partners (all 17 listed with teal check icons)
+        Column 2: Private Insurance Companies (all 13 listed with teal check icons)
+    - Each item: icon + name, 2-column grid within each card
+
+[12] TESTIMONIALS (cream bg)
+    - Centered header: eyebrow "PATIENT REVIEWS", H2 "What Our Patients Say"
+    - 3 cards (1 column mobile, 3 desktop)
+    - Each card: large red quote mark, 5 gold stars, italic text, author avatar
+      (initials in navy circle) + name + "Verified Patient" teal label
+
+[13] CONTACT SECTION (navy bg)
+    - 2-column grid:
+        Left: eyebrow "GET IN TOUCH", H2, description, 5 contact items
+              (Enquiry / Helpline / Ambulance / Address: Sangamner Ahmednagar Maharashtra / Website)
+        Right: booking form card (semi-transparent dark bg):
+               Title "Book an Appointment", fields:
+               Patient Name | Phone Number (row)
+               Department (dropdown: Emergency / Laparoscopic Surgery / Cardiology /
+               Orthopaedics / Cancer Surgery / Gastroenterology / Urology / Plastic Surgery /
+               Diagnostics / General Consultation)
+               Preferred Date | Preferred Time (row)
+               Message textarea (optional)
+               Red "Confirm Booking" submit button with animated feedback on click
+
+[14] GOOGLE MAPS EMBED
+    - Full-width iframe, height 360px
+    - Embed URL for Sangamner Maharashtra India
+
+[15] FOOTER (dark #060f1e bg)
+    - 4 columns: Brand info + social icons | Quick Links | Specialities | Contact
+    - Social: Facebook | Instagram | YouTube (link to video) | WhatsApp (wa.me/918888882225)
+    - Bottom bar: copyright + NABH accredited teal badge
+    - Scroll-to-top floating button (red circle, appears after 500px scroll)
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PAGE 2: ABOUT — about.html                                                     │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+[1] Same Navbar (all 5 pages share identical navbar)
+[2] Page Hero Banner: H1 "About Us", breadcrumb "Home > About",
+    Background: kutedr1.png with dark overlay
+[3] Hospital Story Section: 2-col — left: IMG_9717 + IMG_9680 stacked images,
+    right: full story text:
+    "At Kute Hospital & Laparoscopy Centre, we are dedicated to providing world-class
+    healthcare services. We focus on patient-centered care, cutting-edge medical
+    solutions, and a compassionate approach to healing. With a dedication to safety,
+    excellence, and innovation, we are known for the best & affordable treatments
+    with quick appointments and timely solutions. We provide world-class treatment
+    at Kute Hospital. Led by Dr. Pradeep Kute with 14+ years of experience."
+[4] Mission / Vision / Values: 3 cards in a row
+    Mission: "To deliver compassionate, world-class healthcare to every patient."
+    Vision: "To be the most trusted healthcare destination in Sangamner and beyond."
+    Values: "Safety · Excellence · Innovation · Compassion · Integrity"
+[5] Hospital Milestones Timeline (vertical):
+    2010 — Hospital Founded in Sangamner
+    2012 — Advanced Laparoscopy Centre Established
+    2015 — NABH Accreditation Achieved
+    2018 — Super-Speciality Departments Added (Cardiology, Nephrology)
+    2023 — 4800+ Patients per Month Milestone Achieved
+[6] Facility Highlights: 4 image cards in grid:
+    ICU (Screenshot-349-1) | Pathology Lab (Screenshot-351-1)
+    OT (IMG_9643) | Hospital Floor (IMG_9680)
+    Each with title + short description overlay
+[7] Stats Counter Section (same as home page)
+[8] Full Insurance & TPA Section (same as home page)
+[9] Same Footer
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PAGE 3: SERVICES — services.html                                               │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+[1] Same Navbar
+[2] Page Hero Banner: H1 "Our Services", breadcrumb "Home > Services"
+    Background: cancer-surgery image with overlay
+[3] Services Introduction paragraph:
+    "We provide world-class treatment at Kute Hospital & Laparoscopy Centre.
+    We specialize in laparoscopic surgery, general surgery, urology, gastroenterology,
+    orthopaedic & trauma surgery, arthroscopic surgery, oncology & plastic surgery,
+    and super-speciality surgeries including cardiology and nephrology, along with
+    intensive care services."
+[4] 9 Detailed Service Sections (alternating left-right image layout):
+    Each section has: image (50%) + content (50%)
+    Content = eyebrow label + H2 title + description + key features list (4 bullets)
+    + "Book Appointment" CTA button
+
+    Service 1 - Emergency & ICU
+    Image: Screenshot-349-1.png
+    Features: 24/7 availability | Rapid response team | Advanced ICU beds | Trauma care
+
+    Service 2 - Laparoscopic Surgery
+    Image: IMG_9643-1024x683-1.jpg
+    Features: Minimally invasive | Faster recovery | Less post-op pain | Expert surgeons
+
+    Service 3 - Cancer Surgery (Oncology)
+    Image: cancer-surgery-1024x681-1.jpg
+    Features: Tumor removal | Reconstructive surgery | Post-op care | Multidisciplinary team
+
+    Service 4 - Diagnostics & Pathology Lab
+    Image: Screenshot-351-1.png
+    Features: Same-day results | MRI & CT Scan | Full blood work | Radiology
+
+    Service 5 - Cardiology
+    Image: Screenshot-358.png
+    Features: ECG & Echo | Cardiac ICU | Interventional cardiology | Heart surgery
+
+    Service 6 - Orthopaedics & Trauma
+    Image: IMG_9680-1024x683-1.jpg
+    Features: Joint replacement | Arthroscopy | Fracture care | Sports injuries
+
+    Service 7 - Gastroenterology
+    Image: Screenshot-359-1.png
+    Features: Endoscopy | Colonoscopy | Liver care | GI surgeries
+
+    Service 8 - Urology & Nephrology
+    Image: Screenshot-354.png
+    Features: Kidney stone removal | Dialysis | Renal surgery | Urological care
+
+    Service 9 - Plastic Surgery
+    Image: Screenshot-355.png
+    Features: Scar revision | Wound repair | Reconstructive | Cosmetic procedures
+
+[5] Why Choose Our Services: 4 horizontal cards
+    Advanced Equipment | Experienced Surgeons | Affordable Prices | Cashless Mediclaim
+[6] CTA Banner: red/navy gradient, "Book Your Appointment Today", 2 buttons
+[7] Same Footer
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PAGE 4: DOCTORS — doctors.html                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+[1] Same Navbar
+[2] Page Hero Banner: H1 "Meet Our Experts", breadcrumb
+    Background: Screenshot-352.png with overlay
+[3] Dr. Pradeep Kute — Featured Doctor Section (large layout):
+    Left: Screenshot-347.png tall image with "14+ Years" red badge
+    Right: "Chief Surgeon & Hospital Director" red label,
+    H1 "Dr. Pradeep Kute",
+    Full bio:
+    "Dr. Pradeep Kute is a highly experienced and knowledgeable doctor with over
+    14 years of expertise. With a deep understanding of various medical conditions
+    and treatments, Dr. Kute provides effective diagnosis and care. Being associated
+    with a highly equipped hospital, he has access to advanced medical technologies
+    and resources. Dr. Kute prioritizes patient well-being and satisfaction, ensuring
+    attentive care, clear communication, and a patient-centered approach to medicine."
+    3 achievement badges: 14+ Years of Experience | Highly Equipped Hospital | Good Quality Care & Service
+    Tags: Laparoscopic Surgery | General Surgery | Oncology | Trauma Surgery | NABH Certified
+    2 buttons: [Call +91 88888 82225] + [Book Appointment]
+[4] Full-width image banner: Screenshot-359.png (Doctor checking patient)
+    Overlay text: "Compassionate Care in Every Interaction"
+[5] Expert Specialist Card: Screenshot-348.png with "Expert Specialist" label
+[6] Our Dedicated Team Section:
+    H2 "Our Dedicated Team", description about commitment to patient care
+    2 staff images side by side: Screenshot-352.png + IMG_9901-768x512-1.jpg
+    with dark overlay labels
+[7] Appointment CTA Banner (navy/red): "Book an Appointment with Our Experts"
+    + inline mini form (Name, Phone, Department, Book button)
+[8] Same Footer
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  PAGE 5: CONTACT — contact.html                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+[1] Same Navbar
+[2] Page Hero Banner: H1 "Contact Us", sub "Book an Appointment Today"
+    Background: kutedr1.png with overlay
+[3] 3 Large Phone Cards (full-width row, cream bg):
+    Card 1: red icon + "Enquiry" + +91 88888 82225 (clickable)
+    Card 2: teal icon + "Medical Helpline" + +91 88887 32225 (clickable)
+    Card 3: navy icon + "Ambulance 24/7" + +91 88883 72225 (clickable)
+[4] Main Contact Grid (navy bg):
+    Left: Address (Sangamner, Ahmednagar, Maharashtra), all 3 phones,
+          kutehospital.com, "Open 24/7 — 365 Days a Year" note
+    Right: Full appointment booking form:
+           Patient Name | Phone Number
+           Email Address
+           Department dropdown (all 9 services + General Consultation)
+           Preferred Date | Preferred Time
+           Message textarea
+           Red submit button with "Booking Sent!" teal feedback animation
+[5] Google Maps full-width iframe (Sangamner Maharashtra — height 420px)
+[6] Emergency Banner (full-width red):
+    "FOR EMERGENCIES CALL +91 88883 72225 — Available 24/7 · 365 Days"
+[7] FAQ Accordion Section (cream bg):
+    H2 "Frequently Asked Questions"
+    Q1: What are the OPD hours at Kute Hospital?
+    A: OPD is available from 9:00 AM to 9:00 PM daily.
+    Q2: Does Kute Hospital have cashless treatment facility?
+    A: Yes, we accept cashless treatment under 30+ TPA and private insurance companies.
+    Q3: Is ambulance service available 24/7?
+    A: Yes, our ambulance service is available 24 hours a day, 365 days a year at +91 88883 72225.
+    Q4: What specialities does Kute Hospital offer?
+    A: We offer 20+ specialities including Laparoscopy, Cardiology, Oncology, Orthopaedics,
+       Gastroenterology, Urology, Nephrology, Plastic Surgery, Diagnostics, and ICU/Emergency.
+    Q5: How do I book an appointment?
+    A: Call us at +91 88888 82225, or use the booking form on this page.
+    Q6: Does the hospital have ICU facilities?
+    A: Yes, we have a fully equipped 24/7 ICU with advanced monitoring and care.
+    Accordion: click to expand/collapse with smooth animation + +/- icon toggle
+[8] Same Footer
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 8 — TECHNICAL REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HTML:
+- Semantic HTML5: nav, header, main, section, article, footer
+- Meta tags on every page: charset, viewport, description, keywords
+- All phone numbers as <a href="tel:..."> clickable links
+- All cross-page links correct: index.html, about.html, services.html, doctors.html, contact.html
+- loading="lazy" on all images below the fold
+- Meaningful alt text on every image
+
+CSS:
+- All CSS in <style> tag inside <head> — no external files
+- CSS custom properties (variables) at :root for all brand colors
+- Google Fonts import at top of <style>
+- Mobile-first responsive: breakpoints at 480px, 768px, 1024px
+- CSS Grid and Flexbox for all layouts
+- Smooth transitions 0.25s ease on all interactive elements
+- NO Bootstrap, NO Tailwind — pure custom CSS only
+- box-shadow for card depth, border-radius 8-18px on containers
+
+JAVASCRIPT:
+- All JS in <script> tag before </body> — no external files
+- IntersectionObserver for counter animations (trigger once on scroll into view)
+- Active nav link: highlight based on current scroll position (home page)
+  or based on current page filename (other pages)
+- Mobile hamburger: toggle open/close class, smooth CSS transition
+- YouTube: thumbnail div click → hide thumbnail → set iframe src with autoplay=1
+- Scroll-to-top button: show/hide based on scrollY > 500, smooth scroll
+- Form submit: preventDefault, change button to teal "✓ Booking Request Sent!", reset after 3s
+- FAQ accordion: toggle open/close class on question click, animate max-height
+- Scroll behavior: smooth for all anchor links
+
+ELEMENTOR COMPATIBILITY:
+- Each page = one self-contained HTML file
+- No PHP, no server-side code — pure HTML/CSS/JS only
+- Paste each file into Elementor "HTML Widget" on a full-width page
+- Set Elementor Canvas template (removes WP header/footer)
+- Set widget/section padding to 0px
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 9 — OUTPUT FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Generate all 5 files sequentially. Do NOT truncate any file.
+Start each file with this comment:
+<!-- ===== PAGE: [PAGENAME] | Kute Hospital & Laparoscopy Centre v1.0 ===== -->
+
+Output order:
+1. index.html    (Home — all 15 sections)
+2. about.html    (About — all sections)
+3. services.html (Services — all sections)
+4. doctors.html  (Doctors — all sections)
+5. contact.html  (Contact — all sections)
+
+Every file must be 100% complete, production-ready, and copy-pasteable into Elementor.
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║   END OF MEGA PROMPT — Kute Hospital & Laparoscopy Centre, Sangamner, Maharashtra  ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝

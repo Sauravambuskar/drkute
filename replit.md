@@ -25,3 +25,15 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+### Kute Hospital & Laparoscopy Centre (`/`)
+- **Type**: React + Vite web app
+- **Slug**: `kute-hospital`
+- **Pages**: Home, About, Services, Doctors, Contact (5-page hospital website)
+- **Brand colors**: Red (#FF3F25), Navy (#0B1F3A), Teal (#00B5A4)
+- **Fonts**: Rethink Sans + DM Serif Display Italic
+- **Icons**: Font Awesome 6.5.0
+- **Features**: Animated stat counters, YouTube embed with custom thumbnail, appointment booking form, FAQ accordion, insurance & TPA partners section, responsive navbar with hamburger, scroll-to-top button, Google Maps embed
+- **No backend needed**: Pure frontend/static site

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -7,7 +7,7 @@ import StatsCounter from "../components/StatsCounter";
 import InsuranceSection from "../components/InsuranceSection";
 
 const IMGS = {
-  hospital: "https://www.kutehospital.com/wp-content/uploads/2026/02/kutedr1.png",
+  hospital: "https://backup.kutehospital.com/wp-content/uploads/2024/03/IMG_9858-768x512.jpg",
   drKute: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-347.png",
   doctor2: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-348.png",
   doctorPatient: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-359.png",
@@ -47,38 +47,34 @@ function YouTubeSection() {
           <div className="eyebrow" style={{ marginBottom: 12 }}>WATCH &amp; LEARN</div>
           <h2 className="h2-size" style={{ color: "#fff", marginBottom: 0 }}>See Kute Hospital in Action</h2>
         </div>
-        <div style={{ position: "relative", borderRadius: 16, overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.5)", aspectRatio: "16/9" }}>
+        <div style={{ position: "relative", borderRadius: 16, overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.5)", paddingBottom: "56.25%", height: 0 }}>
           {!playing ? (
             <div
               onClick={() => setPlaying(true)}
-              style={{ position: "relative", cursor: "pointer", width: "100%", height: "100%" }}
+              style={{ position: "absolute", inset: 0, cursor: "pointer" }}
             >
               <img
                 src={IMGS.drKute}
                 alt="Dr. Pradeep Kute - Watch hospital video"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
-              <div style={{ position: "absolute", inset: 0, background: "rgba(11,31,58,0.5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ position: "absolute", inset: 0, background: "rgba(11,31,58,0.45)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <div style={{
                   width: 80, height: 80, borderRadius: "50%",
                   background: "var(--red)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   boxShadow: "0 8px 32px rgba(255,63,37,0.5)",
-                  transition: "transform 0.2s ease",
-                }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "scale(1.1)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "none"; }}
-                >
+                }}>
                   <i className="fas fa-play" style={{ color: "#fff", fontSize: 28, marginLeft: 4 }} />
                 </div>
               </div>
             </div>
           ) : (
             <iframe
-              src="https://www.youtube.com/embed/sP9eHwJOQIA?autoplay=1"
-              allow="autoplay; encrypted-media"
+              src="https://www.youtube-nocookie.com/embed/sP9eHwJOQIA?autoplay=1&rel=0&modestbranding=1"
+              allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
-              style={{ width: "100%", height: "100%", border: "none" }}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }}
               title="Kute Hospital Video"
             />
           )}
@@ -96,7 +92,7 @@ export default function Home() {
       {/* HERO */}
       <section style={{
         minHeight: "100vh",
-        background: `linear-gradient(rgba(11,31,58,0.88), rgba(11,31,58,0.88)), url(${IMGS.hospital}) center/cover no-repeat`,
+        background: `linear-gradient(rgba(11,31,58,0.55), rgba(11,31,58,0.55)), url(${IMGS.hospital}) center/cover no-repeat`,
         display: "flex",
         alignItems: "center",
         paddingTop: 72,
@@ -475,26 +471,19 @@ export default function Home() {
 }
 
 function ServiceCard({ title, icon, img, desc }: { title: string; icon: string; img: string; desc: string }) {
-  const [hovered, setHovered] = useState(false);
   return (
-    <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        background: "#fff",
-        borderRadius: 12,
-        overflow: "hidden",
-        boxShadow: hovered ? "0 16px 40px rgba(0,0,0,0.12)" : "0 4px 16px rgba(0,0,0,0.06)",
-        transform: hovered ? "translateY(-4px)" : "none",
-        transition: "all 0.25s ease",
-        borderTop: hovered ? "3px solid var(--red)" : "3px solid transparent",
-      }}
-    >
+    <div style={{
+      background: "#fff",
+      borderRadius: 12,
+      overflow: "hidden",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.06)",
+      borderTop: "3px solid var(--red)",
+    }}>
       <div style={{ height: 180, overflow: "hidden" }}>
         <img
           src={img}
           alt={title}
-          style={{ width: "100%", height: "100%", objectFit: "cover", transform: hovered ? "scale(1.06)" : "scale(1)", transition: "transform 0.4s ease" }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
           loading="lazy"
         />
       </div>
@@ -510,17 +499,12 @@ function ServiceCard({ title, icon, img, desc }: { title: string; icon: string; 
 }
 
 function GalleryImg({ src, alt }: { src: string; alt: string }) {
-  const [hovered, setHovered] = useState(false);
   return (
-    <div
-      style={{ width: "100%", height: "100%", overflow: "hidden" }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
+    <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
       <img
         src={src}
         alt={alt}
-        style={{ width: "100%", height: "100%", objectFit: "cover", transform: hovered ? "scale(1.06)" : "scale(1)", transition: "transform 0.4s ease" }}
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
         loading="lazy"
       />
     </div>

@@ -7,8 +7,8 @@ import StatsCounter from "../components/StatsCounter";
 import InsuranceSection from "../components/InsuranceSection";
 
 const IMGS = {
-  hospital: "https://backup.kutehospital.com/wp-content/uploads/2024/03/IMG_9858-768x512.jpg",
-  drKute: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-347.png",
+  hospital: "https://www.kutehospital.com/wp-content/uploads/2026/02/kutedr1.png",
+  drKute: "https://backup.kutehospital.com/wp-content/uploads/2024/03/IMG_9858-768x512.jpg",
   doctor2: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-348.png",
   doctorPatient: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-359.png",
   icu: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-349-1.png",

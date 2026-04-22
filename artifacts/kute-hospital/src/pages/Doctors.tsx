@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const IMGS = {
-  drKute: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-347.png",
+  drKute: "https://backup.kutehospital.com/wp-content/uploads/2024/03/IMG_9858-768x512.jpg",
   doctor2: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-348.png",
   doctorPatient: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-359.png",
   staff1: "https://www.kutehospital.com/wp-content/uploads/2026/02/Screenshot-352.png",
